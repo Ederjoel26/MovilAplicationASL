@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "aslogicmonitor-3db51",
+  "private_key_id": "c06223f4eea1b2927a01e4182b14cc0000b99d0d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCnBszws+/lEMMl\nSztDvI29+ffUMRmdDFM1aqTYDDtfPEKX66viK4xcsGSZGV9OQWY8e3NIuKU3w9IU\n60KhfFEWVna5Q2RljLSzGkUXbXKhON2GpKvDB8SCMVbSgmLCOtHut6avDm45by3N\n522CU3vApzuJZY8uHFmnE38e1hNQ6mnqvbGxmY+ojr+v47jwAGR60ivhqFsuT8Hc\n+DisGANoKxcSZZZvvpEKrRGnytXLlTtBQsNlbZ1v9rOVymgGw49rn0/J46EqJSB/\nCRf9zNxb2+oEycdN0DVq0zxDfa60vlFEZ3WWG+E3E7HJqH+LeEAE2qGN9lknBMrl\nelkQlKrvAgMBAAECggEAS43Wd82VZ2OBOuYAnX/2CClCU4CQawuvuhqPDdHeq5JZ\nN1qainkTibwbDWw+Qepwgkx/ljY8OnEAn4jaP606CuY610wmZo9TEC+CcHoIX+iW\nwLjNn6/sUs5ZzWjAnsa3vwnhQw++iYmCyUD2Nv1nnfqoAltn/L5DScIWf07sNu3P\npPfurrditTF0j0/3V+Tf27mjOpgN1zDL3IXMVeMhnJ3rrMjSfYiAQvC7F6mAZC9Z\nOMgJYrZujYGIN0pq4P6dv++FokzkUl7GHPewWp14ZKiQeqdh3vzRdwx95lYX9wBq\nqSU8H1bNSxyZb/5um++qjjk0ZD8ZmAe3eFwJoNdNqQKBgQDVsDsxDkcJPXDeEVDl\n+WxajyG+LDxeWdFl5QaANfDVzbKpjZwckyN70r0aJq9qReCvaV5C6pE3qyMJIjDu\nL2H7mQ4zPcXp56HK9skrC6LdIhl4Pz4MSzdsXaBWFVhSSI+YMuWt2j7BFPwBXU7b\npbVHZztswpkeiUHVDSGLDQ8AlwKBgQDIGU1BZlw/yOHtlNh2dCFjluuIpQ0QVu4D\nonCO46VDZIMSnMJDW0PlyO8beLnFTpaBLXIBBiJCfm9RCKY1FB9XjS3j9PmnSm5L\nTkymvfb4cQE1nr1ZYlBh6WskS8Yi2qJhISe4NgvdA/XXpgxtFwUMkrELwVR3J0b4\nJDaBUL6baQKBgEYXtYLE1SZBwhkFgwy8gP8/fej8Z5znR1luA3DgwKvQ+i7FpZR1\n6yi9movObrGkVCwVmvbGLHYfK7HeRkCKyFAYB2FlfNrZwOdrhdcZzQVOHx6jV/3+\nWiKwn1w9SihLZtacs1wQf48kC/mCmtBPjaPrR8HIHyO2ECMLWJpc4TPnAoGAG7YF\nUO1QETVMtI5Me/sRNK2N6NqSuJSRWceBNwintnGRBV7YOGPHP2dYVcGeWIjNpw4Y\nH7Qtwm+oEtzTx74FqSZQGKWwfU59f8hULTNZpIZh2H8nUd2frC+bOueThPgqTLE+\nwvAZLH6D6V2BkwoBFQCrrCkV/XpfBbZeJgJ8oyECgYAV9l81vsGfQl7Aji3HjAyG\nWjYGXDFNcVdiBMIF6fY9+OIhwz+DdizZydLCQR5QPfOTSumsEAs6I1CtRVjumkf9\n2TckkCCQLwA4Xj5aNdMwWTtgOcbFVlyeMjVUzVsIZ2QngEYXKVz7A7k+b8MYNSgP\nDQVi64/oazRNn4JI6XPY2g==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-rsqhw@aslogicmonitor-3db51.iam.gserviceaccount.com",
+  "client_id": "118014080386557559137",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-rsqhw%40aslogicmonitor-3db51.iam.gserviceaccount.com"
+}

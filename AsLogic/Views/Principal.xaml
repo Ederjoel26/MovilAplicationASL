@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsLogic.Views.Principal"
+             xmlns:viewmodels="clr-namespace:AsLogic.ViewModels"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:vm="clr-namespace:AsLogic.ViewModels"
+             xmlns:model="clr-namespace:AsLogic.Models"
+             Title=""
+             x:DataType="vm:PrincipalViewModel"
+             BackgroundImageSource="fondo2.png">
+    <Grid RowDefinitions="10*,20*, 20*, 20*, 10*">
+        <ContentView Grid.Row="0"
+                     HorizontalOptions="Center">
+            <Label Text="Selecciona un Site"
+                   FontSize="Title"
+                   HorizontalOptions="Center"
+                   Padding="0,20,0,0"
+                   FontAttributes="Bold"></Label>
+        </ContentView>
+        <ContentView Grid.Row="1"
+                     VerticalOptions="Center"
+                     Padding="0,10,0,10">
+            <Grid RowDefinitions="85*,15*">
+                <ImageButton Source="serv.jpg"
+                             Grid.Row="0"
+                             CornerRadius="20"
+                             WidthRequest="300"
+                             BackgroundColor="White"
+                             BorderColor="Black"
+                             BorderWidth="1"
+                             Command="{Binding RedireccionarSite1Command}">
+                </ImageButton>
+                <Label Grid.Row="1"
+                       Text="Site 1"
+                       HorizontalOptions="Center"
+                       FontSize="Medium"
+                       FontAttributes="Bold">
+                </Label>
+            </Grid>
+        </ContentView>
+        <ContentView Grid.Row="2"
+                     VerticalOptions="Center"
+                     Padding="0,10,0,10">
+            <Grid RowDefinitions="85*,15*">
+                <ImageButton Source="serv.jpg"
+                             Grid.Row="0"
+                             CornerRadius="20"
+                             WidthRequest="300"
+                             BackgroundColor="White"
+                             BorderColor="Black"
+                             BorderWidth="1"
+                             Command="{Binding RedireccionarSite2Command}">
+                </ImageButton>
+                <Label Grid.Row="1"
+                       Text="Site 2"
+                       HorizontalOptions="Center"
+                       FontSize="Medium"
+                       FontAttributes="Bold">
+                </Label>
+            </Grid>
+        </ContentView>
+        <ContentView Grid.Row="3"
+                     VerticalOptions="Center"
+                     Padding="0,10,0,10">
+            <Grid RowDefinitions="85*,15*">
+                <ImageButton Source="serv.jpg"
+                             Grid.Row="0"
+                             CornerRadius="20"
+                             WidthRequest="300"
+                             BackgroundColor="White"
+                             BorderColor="Black"
+                             BorderWidth="1"
+                             Command="{Binding RedireccionarSite3Command}">
+                </ImageButton>
+                <Label Grid.Row="1"
+                       Text="Site 3"
+                       HorizontalOptions="Center"
+                       FontSize="Medium"
+                       FontAttributes="Bold">
+                </Label>
+            </Grid>
+        </ContentView>
+    </Grid>
+</ContentPage>

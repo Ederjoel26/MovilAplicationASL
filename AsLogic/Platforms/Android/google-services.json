@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "182495303582",
+    "firebase_url": "https://aslogicmonitor-default-rtdb.firebaseio.com",
+    "project_id": "aslogicmonitor",
+    "storage_bucket": "aslogicmonitor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182495303582:android:19aeb445c0fba01967a88f",
+        "android_client_info": {
+          "package_name": "com.companyname.aslogic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182495303582-3mn7qlgurmphnb7au7184al50heg1qst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPXTJ5Sh_FxKCv_U6azRoUtn0i_7lEVwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182495303582-3mn7qlgurmphnb7au7184al50heg1qst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

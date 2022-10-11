@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="AsLogic.Views.Site1"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:project="clr-namespace:AsLogic.Models"
+             Title="Site 1"
+             BackgroundImageSource="fondoaslogic.png"
+             xmlns:viewmodels="clr-namespace:AsLogic.ViewModels"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:vm="clr-namespace:AsLogic.ViewModels"
+             xmlns:model="clr-namespace:AsLogic.Models"
+             x:DataType="vm:Site1ViewModel">
+    <Grid RowDefinitions="10*,70*,20*">
+        <ContentView Grid.Row="0"
+                     HorizontalOptions="Center">
+            <Label Text="Site1"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   Padding="0,30,0,0"></Label>
+        </ContentView>
+
+        <ContentView Grid.Row="1">
+            <Grid RowDefinitions="50*, 50*"
+                  ColumnDefinitions="50*,50*">
+                <Frame Grid.Row="0"
+                       Grid.Column="0"
+                       CornerRadius="20"
+                       Margin="5,1,1,1"
+                       BorderColor="Black">
+                    <Grid RowDefinitions="10*, 90*">
+                        <Label Grid.Row="0"
+                               Text="Rack 1"
+                               HorizontalOptions="Center"
+                               FontSize="Medium"
+                               FontAttributes="Bold"></Label>
+                        <ContentView Grid.Row="1">
+                            <Grid RowDefinitions="20*,20*,20*,20*, 20*">
+                                <HorizontalStackLayout Grid.Row="0">
+                                    <Image Source="{Binding ImgTemperaturaRack1}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding TemperaturaRack1 }"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="1">
+                                    <Image Source="{Binding ImgHumedadRack1}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding HumedadRack1}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="2">
+                                    <Image Source="{Binding ImgEnergiaRack1}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding EnergiaRack1}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="3">
+                                    <Image Source="{Binding ImgLuzRack1}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding LuzRack1}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="4">
+                                    <Image Source="{Binding ImgPuertasRack1}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding PuertasRack1}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                            </Grid>
+                        </ContentView>
+                    </Grid>
+                </Frame>
+
+                <Frame Grid.Row="0"
+                       Grid.Column="1"
+                       CornerRadius="20"
+                       Margin="1,1,5,1"
+                       BorderColor="Black">
+                    <Grid RowDefinitions="10*, 90*">
+                        <Label Grid.Row="0"
+                               Text="Rack 2"
+                               HorizontalOptions="Center"
+                               FontSize="Medium"
+                               FontAttributes="Bold"></Label>
+                        <ContentView Grid.Row="1">
+                            <Grid RowDefinitions="20*,20*,20*,20*, 20*">
+                                <HorizontalStackLayout Grid.Row="0">
+                                    <Image Source="{Binding ImgTemperaturaRack2}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding TemperaturaRack2}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="1">
+                                    <Image Source="{Binding ImgHumedadRack2}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding HumedadRack2}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="2">
+                                    <Image Source="{Binding ImgEnergiaRack2}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding EnergiaRack2}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="3">
+                                    <Image Source="{Binding ImgLuzRack2}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding LuzRack2}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="4">
+                                    <Image Source="{Binding ImgPuertasRack2}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding PuertasRack2}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                            </Grid>
+                        </ContentView>
+                    </Grid>
+                </Frame>
+
+                <Frame Grid.Row="1"
+                       Grid.Column="0"
+                       CornerRadius="20"
+                       Margin="5,1,1,1"
+                       BorderColor="Black">
+                    <Grid RowDefinitions="10*, 90*">
+                        <Label Grid.Row="0"
+                               Text="Rack 3"
+                               HorizontalOptions="Center"
+                               FontSize="Medium"
+                               FontAttributes="Bold"></Label>
+                        <ContentView Grid.Row="1">
+                            <Grid RowDefinitions="20*,20*,20*,20*, 20*">
+                                <HorizontalStackLayout Grid.Row="0">
+                                    <Image Source="{Binding ImgTemperaturaRack3}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding TemperaturaRack3}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="1">
+                                    <Image Source="{Binding ImgHumedadRack3}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding HumedadRack3}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="2">
+                                    <Image Source="{Binding ImgEnergiaRack3}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding EnergiaRack3}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="3">
+                                    <Image Source="{Binding ImgLuzRack3}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding LuzRack3}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="4">
+                                    <Image Source="{Binding ImgPuertasRack3}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding PuertasRack3}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                            </Grid>
+                        </ContentView>
+                    </Grid>
+                </Frame>
+
+                <Frame Grid.Row="1"
+                       Grid.Column="1"
+                       CornerRadius="20"
+                       Margin="1,1,5,1"
+                       BorderColor="Black">
+                    <Grid RowDefinitions="10*, 90*">
+                        <Label Grid.Row="0"
+                               Text="Rack 4"
+                               HorizontalOptions="Center"
+                               FontSize="Medium"
+                               FontAttributes="Bold"></Label>
+                        <ContentView Grid.Row="1">
+                            <Grid RowDefinitions="20*,20*,20*,20*, 20*">
+                                <HorizontalStackLayout Grid.Row="0">
+                                    <Image Source="{Binding ImgTemperaturaRack4}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding TemperaturaRack4}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="1">
+                                    <Image Source="{Binding ImgHumedadRack4}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding HumedadRack4}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="2">
+                                    <Image Source="{Binding ImgEnergiaRack4}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding EnergiaRack4}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="3">
+                                    <Image Source="{Binding ImgLuzRack4}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding LuzRack4}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout Grid.Row="4">
+                                    <Image Source="{Binding ImgPuertasRack4}"
+                                           HeightRequest="30"></Image>
+                                    <Label Text="{Binding PuertasRack4}"
+                                           VerticalOptions="Center"></Label>
+                                </HorizontalStackLayout>
+                            </Grid>
+                        </ContentView>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </ContentView>
+
+        <ContentView Grid.Row="2">
+        </ContentView>
+    </Grid>
+</ContentPage>
