@@ -14,9 +14,9 @@ namespace AsLogic.ViewModels
     {
         // Label's
         [ObservableProperty]
-        double temperaturaRack1, temperaturaRack2, temperaturaRack3, temperaturaRack4;
+        string temperaturaRack1, temperaturaRack2, temperaturaRack3, temperaturaRack4;
         [ObservableProperty]
-        double humedadRack1, humedadRack2, humedadRack3, humedadRack4;
+        string humedadRack1, humedadRack2, humedadRack3, humedadRack4;
         [ObservableProperty]
         string energiaRack1, energiaRack2, energiaRack3, energiaRack4;
         [ObservableProperty]
@@ -81,7 +81,7 @@ namespace AsLogic.ViewModels
                     ImgLuzRack1 = "focopren.png";
                     LuzRack1 = "Encendida";
                 }
-                HumedadRack1 = rack.Humedad;
+                HumedadRack1 = $"{rack.Humedad} %";
                 if (rack.Humedad <= 10) ImgHumedadRack1 = "gotavacia.png";
                 else if (rack.Humedad > 10 && rack.Humedad <= 20) ImgHumedadRack1 = "gota10.png";
                 else if (rack.Humedad > 20 && rack.Humedad <= 30) ImgHumedadRack1 = "gota20.png";
@@ -93,7 +93,7 @@ namespace AsLogic.ViewModels
                 else if (rack.Humedad > 80 && rack.Humedad <= 90) ImgHumedadRack1 = "gota80.png";
                 else if (rack.Humedad >= 90) ImgHumedadRack1 = "gota90.png";
 
-                TemperaturaRack1 = rack.Temperatura;
+                TemperaturaRack1 = $"{rack.Temperatura} °C";
                 if (rack.Temperatura <= 0) ImgTemperaturaRack1 = "termovacio.png";
                 else if (rack.Temperatura > 0 && rack.Temperatura <= 5) ImgTemperaturaRack1 = "termo1.png";
                 else if (rack.Temperatura > 5 && rack.Temperatura <= 10) ImgTemperaturaRack1 = "termo2.png";
@@ -149,7 +149,7 @@ namespace AsLogic.ViewModels
                     ImgLuzRack2 = "focopren.png";
                     LuzRack2 = "Encendida";
                 }
-                HumedadRack2 = rack.Humedad;
+                HumedadRack2 = $"{rack.Humedad} %";
                 if (rack.Humedad <= 10) ImgHumedadRack2 = "gotavacia.png";
                 else if (rack.Humedad > 10 && rack.Humedad <= 20) ImgHumedadRack2 = "gota10.png";
                 else if (rack.Humedad > 20 && rack.Humedad <= 30) ImgHumedadRack2 = "gota20.png";
@@ -161,7 +161,7 @@ namespace AsLogic.ViewModels
                 else if (rack.Humedad > 80 && rack.Humedad <= 90) ImgHumedadRack2 = "gota80.png";
                 else if (rack.Humedad >= 90) ImgHumedadRack2 = "gota90.png";
 
-                TemperaturaRack2 = rack.Temperatura;
+                TemperaturaRack2 = $"{rack.Temperatura} °C";
                 if (rack.Temperatura <= 0) ImgTemperaturaRack2 = "termovacio.png";
                 else if (rack.Temperatura > 0 && rack.Temperatura <= 5) ImgTemperaturaRack2 = "termo1.png";
                 else if (rack.Temperatura > 5 && rack.Temperatura <= 10) ImgTemperaturaRack2 = "termo2.png";
@@ -217,7 +217,7 @@ namespace AsLogic.ViewModels
                     ImgLuzRack3 = "focopren.png";
                     LuzRack3 = "Encendida";
                 }
-                HumedadRack3 = rack.Humedad;
+                HumedadRack3 = $"{rack.Humedad} %";
                 if (rack.Humedad <= 10) ImgHumedadRack3 = "gotavacia.png";
                 else if (rack.Humedad > 10 && rack.Humedad <= 20) ImgHumedadRack3 = "gota10.png";
                 else if (rack.Humedad > 20 && rack.Humedad <= 30) ImgHumedadRack3 = "gota20.png";
@@ -229,7 +229,7 @@ namespace AsLogic.ViewModels
                 else if (rack.Humedad > 80 && rack.Humedad <= 90) ImgHumedadRack3 = "gota80.png";
                 else if (rack.Humedad >= 90) ImgHumedadRack3 = "gota90.png";
 
-                TemperaturaRack3 = rack.Temperatura;
+                TemperaturaRack3 = $"{rack.Temperatura} °C";
                 if (rack.Temperatura <= 0) ImgTemperaturaRack3 = "termovacio.png";
                 else if (rack.Temperatura > 0 && rack.Temperatura <= 5) ImgTemperaturaRack3 = "termo1.png";
                 else if (rack.Temperatura > 5 && rack.Temperatura <= 10) ImgTemperaturaRack3 = "termo2.png";
@@ -278,14 +278,14 @@ namespace AsLogic.ViewModels
                 if (rack.Luz == false)
                 {
                     ImgLuzRack4 = "focoapg.png";
-                    LuzRack3 = "Apagada";
+                    LuzRack4 = "Apagada";
                 }
                 else
                 {
                     ImgLuzRack4 = "focopren.png";
                     LuzRack4 = "Encendida";
                 }
-                HumedadRack4 = rack.Humedad;
+                HumedadRack4 = $"{rack.Humedad} %";
                 if (rack.Humedad <= 10) ImgHumedadRack4 = "gotavacia.png";
                 else if (rack.Humedad > 10 && rack.Humedad <= 20) ImgHumedadRack4 = "gota10.png";
                 else if (rack.Humedad > 20 && rack.Humedad <= 30) ImgHumedadRack4 = "gota20.png";
@@ -297,7 +297,7 @@ namespace AsLogic.ViewModels
                 else if (rack.Humedad > 80 && rack.Humedad <= 90) ImgHumedadRack4 = "gota80.png";
                 else if (rack.Humedad >= 90) ImgHumedadRack4 = "gota90.png";
 
-                TemperaturaRack4 = rack.Temperatura;
+                TemperaturaRack4 = $"{rack.Temperatura} °C";
                 if (rack.Temperatura <= 0) ImgTemperaturaRack4 = "termovacio.png";
                 else if (rack.Temperatura > 0 && rack.Temperatura <= 5) ImgTemperaturaRack4 = "termo1.png";
                 else if (rack.Temperatura > 5 && rack.Temperatura <= 10) ImgTemperaturaRack4 = "termo2.png";

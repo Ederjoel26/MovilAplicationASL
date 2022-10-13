@@ -8,6 +8,6 @@ namespace AsLogic.Models
 {
     public static class Constantes
     {
-        public static string ProjectID = "aslogicmonitor-3db51";
+        public static string ProjectID = "aslogic-monitor";
     }
 }

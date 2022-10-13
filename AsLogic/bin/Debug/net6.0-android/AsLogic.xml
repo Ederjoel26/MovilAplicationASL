@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AsLogic</name>
+    </assembly>
+    <members>
+        <member name="F:AsLogic.ViewModels.PrincipalViewModel.redireccionarSite1Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.PrincipalViewModel.RedireccionarSite1Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.PrincipalViewModel.RedireccionarSite1Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.PrincipalViewModel.RedireccionarSite1"/>.</summary>
+        </member>
+        <member name="F:AsLogic.ViewModels.PrincipalViewModel.redireccionarSite2Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.PrincipalViewModel.RedireccionarSite2Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.PrincipalViewModel.RedireccionarSite2Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.PrincipalViewModel.RedireccionarSite2"/>.</summary>
+        </member>
+        <member name="F:AsLogic.ViewModels.PrincipalViewModel.redireccionarSite3Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.PrincipalViewModel.RedireccionarSite3Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.PrincipalViewModel.RedireccionarSite3Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.PrincipalViewModel.RedireccionarSite3"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.TemperaturaRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.temperaturaRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.TemperaturaRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.temperaturaRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.TemperaturaRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.temperaturaRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.TemperaturaRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.temperaturaRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.HumedadRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.humedadRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.HumedadRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.humedadRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.HumedadRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.humedadRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.HumedadRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.humedadRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.EnergiaRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.energiaRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.EnergiaRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.energiaRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.EnergiaRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.energiaRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.EnergiaRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.energiaRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.LuzRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.luzRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.LuzRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.luzRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.LuzRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.luzRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.LuzRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.luzRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.PuertasRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.puertasRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.PuertasRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.puertasRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.PuertasRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.puertasRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.PuertasRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.puertasRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgTemperaturaRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgTemperaturaRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgTemperaturaRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgTemperaturaRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgTemperaturaRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgTemperaturaRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgTemperaturaRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgTemperaturaRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgHumedadRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgHumedadRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgHumedadRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgHumedadRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgHumedadRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgHumedadRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgHumedadRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgHumedadRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgEnergiaRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgEnergiaRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgEnergiaRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgEnergiaRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgEnergiaRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgEnergiaRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgEnergiaRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgEnergiaRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgLuzRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgLuzRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgLuzRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgLuzRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgLuzRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgLuzRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgLuzRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgLuzRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgPuertasRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgPuertasRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgPuertasRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgPuertasRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgPuertasRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgPuertasRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.ImgPuertasRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site1ViewModel.imgPuertasRack4"/>
+        </member>
+        <member name="F:AsLogic.ViewModels.Site1ViewModel.asignarValoresRack1Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.Site1ViewModel.AsignarValoresRack1Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.AsignarValoresRack1Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.Site1ViewModel.AsignarValoresRack1"/>.</summary>
+        </member>
+        <member name="F:AsLogic.ViewModels.Site1ViewModel.asignarValoresRack2Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.Site1ViewModel.AsignarValoresRack2Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.AsignarValoresRack2Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.Site1ViewModel.AsignarValoresRack2"/>.</summary>
+        </member>
+        <member name="F:AsLogic.ViewModels.Site1ViewModel.asignarValoresRack3Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.Site1ViewModel.AsignarValoresRack3Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.AsignarValoresRack3Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.Site1ViewModel.AsignarValoresRack3"/>.</summary>
+        </member>
+        <member name="F:AsLogic.ViewModels.Site1ViewModel.asignarValoresRack4Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.Site1ViewModel.AsignarValoresRack4Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site1ViewModel.AsignarValoresRack4Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.Site1ViewModel.AsignarValoresRack4"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.TemperaturaRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.temperaturaRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.TemperaturaRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.temperaturaRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.TemperaturaRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.temperaturaRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.TemperaturaRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.temperaturaRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.HumedadRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.humedadRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.HumedadRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.humedadRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.HumedadRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.humedadRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.HumedadRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.humedadRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.EnergiaRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.energiaRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.EnergiaRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.energiaRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.EnergiaRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.energiaRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.EnergiaRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.energiaRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.LuzRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.luzRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.LuzRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.luzRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.LuzRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.luzRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.LuzRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.luzRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.PuertasRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.puertasRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.PuertasRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.puertasRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.PuertasRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.puertasRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.PuertasRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.puertasRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgTemperaturaRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgTemperaturaRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgTemperaturaRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgTemperaturaRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgTemperaturaRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgTemperaturaRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgTemperaturaRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgTemperaturaRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgHumedadRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgHumedadRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgHumedadRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgHumedadRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgHumedadRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgHumedadRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgHumedadRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgHumedadRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgEnergiaRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgEnergiaRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgEnergiaRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgEnergiaRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgEnergiaRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgEnergiaRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgEnergiaRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgEnergiaRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgLuzRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgLuzRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgLuzRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgLuzRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgLuzRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgLuzRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgLuzRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgLuzRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgPuertasRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgPuertasRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgPuertasRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgPuertasRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgPuertasRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgPuertasRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.ImgPuertasRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site2ViewModel.imgPuertasRack4"/>
+        </member>
+        <member name="F:AsLogic.ViewModels.Site2ViewModel.asignarValoresRack1Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.Site2ViewModel.AsignarValoresRack1Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.AsignarValoresRack1Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.Site2ViewModel.AsignarValoresRack1"/>.</summary>
+        </member>
+        <member name="F:AsLogic.ViewModels.Site2ViewModel.asignarValoresRack2Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.Site2ViewModel.AsignarValoresRack2Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.AsignarValoresRack2Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.Site2ViewModel.AsignarValoresRack2"/>.</summary>
+        </member>
+        <member name="F:AsLogic.ViewModels.Site2ViewModel.asignarValoresRack3Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.Site2ViewModel.AsignarValoresRack3Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.AsignarValoresRack3Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.Site2ViewModel.AsignarValoresRack3"/>.</summary>
+        </member>
+        <member name="F:AsLogic.ViewModels.Site2ViewModel.asignarValoresRack4Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.Site2ViewModel.AsignarValoresRack4Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site2ViewModel.AsignarValoresRack4Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.Site2ViewModel.AsignarValoresRack4"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.TemperaturaRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.temperaturaRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.TemperaturaRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.temperaturaRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.TemperaturaRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.temperaturaRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.TemperaturaRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.temperaturaRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.HumedadRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.humedadRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.HumedadRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.humedadRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.HumedadRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.humedadRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.HumedadRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.humedadRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.EnergiaRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.energiaRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.EnergiaRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.energiaRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.EnergiaRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.energiaRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.EnergiaRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.energiaRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.LuzRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.luzRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.LuzRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.luzRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.LuzRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.luzRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.LuzRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.luzRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.PuertasRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.puertasRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.PuertasRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.puertasRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.PuertasRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.puertasRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.PuertasRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.puertasRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgTemperaturaRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgTemperaturaRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgTemperaturaRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgTemperaturaRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgTemperaturaRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgTemperaturaRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgTemperaturaRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgTemperaturaRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgHumedadRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgHumedadRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgHumedadRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgHumedadRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgHumedadRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgHumedadRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgHumedadRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgHumedadRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgEnergiaRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgEnergiaRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgEnergiaRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgEnergiaRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgEnergiaRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgEnergiaRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgEnergiaRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgEnergiaRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgLuzRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgLuzRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgLuzRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgLuzRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgLuzRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgLuzRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgLuzRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgLuzRack4"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgPuertasRack1">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgPuertasRack1"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgPuertasRack2">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgPuertasRack2"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgPuertasRack3">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgPuertasRack3"/>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.ImgPuertasRack4">
+            <inheritdoc cref="F:AsLogic.ViewModels.Site3ViewModel.imgPuertasRack4"/>
+        </member>
+        <member name="F:AsLogic.ViewModels.Site3ViewModel.asignarValoresRack1Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.Site3ViewModel.AsignarValoresRack1Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.AsignarValoresRack1Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.Site3ViewModel.AsignarValoresRack1"/>.</summary>
+        </member>
+        <member name="F:AsLogic.ViewModels.Site3ViewModel.asignarValoresRack2Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.Site3ViewModel.AsignarValoresRack2Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.AsignarValoresRack2Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.Site3ViewModel.AsignarValoresRack2"/>.</summary>
+        </member>
+        <member name="F:AsLogic.ViewModels.Site3ViewModel.asignarValoresRack3Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.Site3ViewModel.AsignarValoresRack3Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.AsignarValoresRack3Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.Site3ViewModel.AsignarValoresRack3"/>.</summary>
+        </member>
+        <member name="F:AsLogic.ViewModels.Site3ViewModel.asignarValoresRack4Command">
+            <summary>The backing field for <see cref="P:AsLogic.ViewModels.Site3ViewModel.AsignarValoresRack4Command"/>.</summary>
+        </member>
+        <member name="P:AsLogic.ViewModels.Site3ViewModel.AsignarValoresRack4Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AsLogic.ViewModels.Site3ViewModel.AsignarValoresRack4"/>.</summary>
+        </member>
+    </members>
+</doc>
