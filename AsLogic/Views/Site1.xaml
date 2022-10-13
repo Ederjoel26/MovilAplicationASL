@@ -30,7 +30,7 @@
                         <Label Grid.Row="0"
                                Text="Rack 1"
                                HorizontalOptions="Center"
-                               FontSize="Medium"
+                               FontSize="Medium" 
                                FontAttributes="Bold"></Label>
                         <ContentView Grid.Row="1">
                             <Grid RowDefinitions="20*,20*,20*,20*, 20*">

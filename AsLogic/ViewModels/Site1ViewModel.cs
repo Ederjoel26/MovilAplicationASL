@@ -12,7 +12,6 @@ namespace AsLogic.ViewModels
 {
     public partial class Site1ViewModel : ObservableObject
     {
-        // Label's
         [ObservableProperty]
         string temperaturaRack1, temperaturaRack2, temperaturaRack3, temperaturaRack4;
         [ObservableProperty]
@@ -24,7 +23,6 @@ namespace AsLogic.ViewModels
         [ObservableProperty]
         string puertasRack1, puertasRack2, puertasRack3, puertasRack4;
 
-        // Imagenes
         [ObservableProperty]
         string imgTemperaturaRack1, imgTemperaturaRack2, imgTemperaturaRack3, imgTemperaturaRack4;
         [ObservableProperty]
@@ -39,272 +37,96 @@ namespace AsLogic.ViewModels
         [RelayCommand]
         public async void AsignarValoresRack1()
         {
-            string jsonGoogle = "jsonGoogle.json";
-            var localPath = Path.Combine(FileSystem.CacheDirectory, jsonGoogle);
-            using var json = await FileSystem.OpenAppPackageFileAsync(jsonGoogle);
-            using var dest = File.Create(localPath);
-            await json.CopyToAsync(dest);
-            dest.Close();
+            string localPath = await Valores.Validar("jsonGoogle.json");
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", localPath);
             FirestoreDb db = FirestoreDb.Create(Constantes.ProjectID);
             DocumentReference docRef = db.Collection("Site1").Document("Rack1");
             FirestoreChangeListener listener = docRef.Listen(snap =>
             {
                 RackModel rack = snap.ConvertTo<RackModel>();
-                if (rack.Puertas == false)
-                {
-                    ImgPuertasRack1 = "puertacerr.png";
-                    PuertasRack1 = "Cerrada";
-                }
-                else
-                {
-                    ImgPuertasRack1 = "puertaopen.png";
-                    PuertasRack1 = "Abierta";
-                }
-                if (rack.Energia == false)
-                {
-                    ImgEnergiaRack1 = "energia.png";
-                    EnergiaRack1 = "No hay energia";
-                }
-                else
-                {
-                    ImgEnergiaRack1 = "rayocol.png";
-                    EnergiaRack1 = "Hay energia";
-                }
-                if (rack.Luz == false)
-                {
-                    ImgLuzRack1 = "focoapg.png";
-                    LuzRack1 = "Apagada";
-                }
-                else
-                {
-                    ImgLuzRack1 = "focopren.png";
-                    LuzRack1 = "Encendida";
-                }
-                HumedadRack1 = $"{rack.Humedad} %";
-                if (rack.Humedad <= 10) ImgHumedadRack1 = "gotavacia.png";
-                else if (rack.Humedad > 10 && rack.Humedad <= 20) ImgHumedadRack1 = "gota10.png";
-                else if (rack.Humedad > 20 && rack.Humedad <= 30) ImgHumedadRack1 = "gota20.png";
-                else if (rack.Humedad > 30 && rack.Humedad <= 40) ImgHumedadRack1 = "gota30.png";
-                else if (rack.Humedad > 40 && rack.Humedad <= 50) ImgHumedadRack1 = "gota40.png";
-                else if (rack.Humedad > 50 && rack.Humedad <= 60) ImgHumedadRack1 = "gota50.png";
-                else if (rack.Humedad > 60 && rack.Humedad <= 70) ImgHumedadRack1 = "gota60.png";
-                else if (rack.Humedad > 70 && rack.Humedad <= 80) ImgHumedadRack1 = "gota70.png";
-                else if (rack.Humedad > 80 && rack.Humedad <= 90) ImgHumedadRack1 = "gota80.png";
-                else if (rack.Humedad >= 90) ImgHumedadRack1 = "gota90.png";
-
-                TemperaturaRack1 = $"{rack.Temperatura} °C";
-                if (rack.Temperatura <= 0) ImgTemperaturaRack1 = "termovacio.png";
-                else if (rack.Temperatura > 0 && rack.Temperatura <= 5) ImgTemperaturaRack1 = "termo1.png";
-                else if (rack.Temperatura > 5 && rack.Temperatura <= 10) ImgTemperaturaRack1 = "termo2.png";
-                else if (rack.Temperatura > 10 && rack.Temperatura <= 15) ImgTemperaturaRack1 = "termo3.png";
-                else if (rack.Temperatura > 15 && rack.Temperatura <= 20) ImgTemperaturaRack1 = "termo4.png";
-                else if (rack.Temperatura > 20 && rack.Temperatura <= 25) ImgTemperaturaRack1 = "termo5.png";
-                else if (rack.Temperatura > 25) ImgTemperaturaRack1 = "termofull.png";
+                RespuestaAsignacionModel res = Valores.Asignacion(rack);
+                HumedadRack1 = res.rack.Humedad;
+                TemperaturaRack1 = res.rack.Temperatura;
+                LuzRack1 = res.rack.Luz;
+                EnergiaRack1 = res.rack.Energia;
+                PuertasRack1 = res.rack.Puertas;
+                ImgLuzRack1 = res.rackImagenesModel.ImgLuz;
+                ImgPuertasRack1 = res.rackImagenesModel.ImgPuertas;
+                ImgTemperaturaRack1 = res.rackImagenesModel.ImgTemperatura;
+                ImgEnergiaRack1 = res.rackImagenesModel.ImgEnergia;
+                ImgHumedadRack1 = res.rackImagenesModel.ImgHumedad;
             });
         }
 
         [RelayCommand]
         public async void AsignarValoresRack2()
         {
-            string jsonGoogle = "jsonGoogle1.json";
-            var localPath = Path.Combine(FileSystem.CacheDirectory, jsonGoogle);
-            using var json = await FileSystem.OpenAppPackageFileAsync(jsonGoogle);
-            using var dest = File.Create(localPath);
-            await json.CopyToAsync(dest);
-            dest.Close();
+            string localPath = await Valores.Validar("jsonGoogle1.json");
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", localPath);
             FirestoreDb db = FirestoreDb.Create(Constantes.ProjectID);
             DocumentReference docRef = db.Collection("Site1").Document("Rack2");
             FirestoreChangeListener listener = docRef.Listen(snap =>
             {
                 RackModel rack = snap.ConvertTo<RackModel>();
-                if (rack.Puertas == false)
-                {
-                    ImgPuertasRack2 = "puertacerr.png";
-                    PuertasRack2 = "Cerrada";
-                }
-                else
-                {
-                    ImgPuertasRack2 = "puertaopen.png";
-                    PuertasRack2 = "Abierta";
-                }
-                if (rack.Energia == false)
-                {
-                    ImgEnergiaRack2 = "energia.png";
-                    EnergiaRack2 = "No hay energia";
-                }
-                else
-                {
-                    ImgEnergiaRack2 = "rayocol.png";
-                    EnergiaRack2 = "Hay energia";
-                }
-                if (rack.Luz == false)
-                {
-                    ImgLuzRack2 = "focoapg.png";
-                    LuzRack2 = "Apagada";
-                }
-                else
-                {
-                    ImgLuzRack2 = "focopren.png";
-                    LuzRack2 = "Encendida";
-                }
-                HumedadRack2 = $"{rack.Humedad} %";
-                if (rack.Humedad <= 10) ImgHumedadRack2 = "gotavacia.png";
-                else if (rack.Humedad > 10 && rack.Humedad <= 20) ImgHumedadRack2 = "gota10.png";
-                else if (rack.Humedad > 20 && rack.Humedad <= 30) ImgHumedadRack2 = "gota20.png";
-                else if (rack.Humedad > 30 && rack.Humedad <= 40) ImgHumedadRack2 = "gota30.png";
-                else if (rack.Humedad > 40 && rack.Humedad <= 50) ImgHumedadRack2 = "gota40.png";
-                else if (rack.Humedad > 50 && rack.Humedad <= 60) ImgHumedadRack2 = "gota50.png";
-                else if (rack.Humedad > 60 && rack.Humedad <= 70) ImgHumedadRack2 = "gota60.png";
-                else if (rack.Humedad > 70 && rack.Humedad <= 80) ImgHumedadRack2 = "gota70.png";
-                else if (rack.Humedad > 80 && rack.Humedad <= 90) ImgHumedadRack2 = "gota80.png";
-                else if (rack.Humedad >= 90) ImgHumedadRack2 = "gota90.png";
-
-                TemperaturaRack2 = $"{rack.Temperatura} °C";
-                if (rack.Temperatura <= 0) ImgTemperaturaRack2 = "termovacio.png";
-                else if (rack.Temperatura > 0 && rack.Temperatura <= 5) ImgTemperaturaRack2 = "termo1.png";
-                else if (rack.Temperatura > 5 && rack.Temperatura <= 10) ImgTemperaturaRack2 = "termo2.png";
-                else if (rack.Temperatura > 10 && rack.Temperatura <= 15) ImgTemperaturaRack2 = "termo3.png";
-                else if (rack.Temperatura > 15 && rack.Temperatura <= 20) ImgTemperaturaRack2 = "termo4.png";
-                else if (rack.Temperatura > 20 && rack.Temperatura <= 25) ImgTemperaturaRack2 = "termo5.png";
-                else if (rack.Temperatura > 25) ImgTemperaturaRack2 = "termofull.png";
+                RespuestaAsignacionModel res = Valores.Asignacion(rack);
+                HumedadRack2 = res.rack.Humedad;
+                TemperaturaRack2 = res.rack.Temperatura;
+                LuzRack2 = res.rack.Luz;
+                EnergiaRack2 = res.rack.Energia;
+                PuertasRack2 = res.rack.Puertas;
+                ImgLuzRack2 = res.rackImagenesModel.ImgLuz;
+                ImgPuertasRack2 = res.rackImagenesModel.ImgPuertas;
+                ImgTemperaturaRack2 = res.rackImagenesModel.ImgTemperatura;
+                ImgEnergiaRack2 = res.rackImagenesModel.ImgEnergia;
+                ImgHumedadRack2 = res.rackImagenesModel.ImgHumedad;
             });
         }
 
         [RelayCommand]
         public async void AsignarValoresRack3()
         {
-            string jsonGoogle = "jsonGoogle2.json";
-            var localPath = Path.Combine(FileSystem.CacheDirectory, jsonGoogle);
-            using var json = await FileSystem.OpenAppPackageFileAsync(jsonGoogle);
-            using var dest = File.Create(localPath);
-            await json.CopyToAsync(dest);
-            dest.Close();
+            string localPath = await Valores.Validar("jsonGoogle2.json");
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", localPath);
             FirestoreDb db = FirestoreDb.Create(Constantes.ProjectID);
             DocumentReference docRef = db.Collection("Site1").Document("Rack3");
             FirestoreChangeListener listener = docRef.Listen(snap =>
             {
                 RackModel rack = snap.ConvertTo<RackModel>();
-                if (rack.Puertas == false)
-                {
-                    ImgPuertasRack3 = "puertacerr.png";
-                    PuertasRack3 = "Cerrada";
-                }
-                else
-                {
-                    ImgPuertasRack3 = "puertaopen.png";
-                    PuertasRack3 = "Abierta";
-                }
-                if (rack.Energia == false)
-                {
-                    ImgEnergiaRack3 = "energia.png";
-                    EnergiaRack3 = "No hay energia";
-                }
-                else
-                {
-                    ImgEnergiaRack3 = "rayocol.png";
-                    EnergiaRack3 = "Hay energia";
-                }
-                if (rack.Luz == false)
-                {
-                    ImgLuzRack3 = "focoapg.png";
-                    LuzRack3 = "Apagada";
-                }
-                else
-                {
-                    ImgLuzRack3 = "focopren.png";
-                    LuzRack3 = "Encendida";
-                }
-                HumedadRack3 = $"{rack.Humedad} %";
-                if (rack.Humedad <= 10) ImgHumedadRack3 = "gotavacia.png";
-                else if (rack.Humedad > 10 && rack.Humedad <= 20) ImgHumedadRack3 = "gota10.png";
-                else if (rack.Humedad > 20 && rack.Humedad <= 30) ImgHumedadRack3 = "gota20.png";
-                else if (rack.Humedad > 30 && rack.Humedad <= 40) ImgHumedadRack3 = "gota30.png";
-                else if (rack.Humedad > 40 && rack.Humedad <= 50) ImgHumedadRack3 = "gota40.png";
-                else if (rack.Humedad > 50 && rack.Humedad <= 60) ImgHumedadRack3 = "gota50.png";
-                else if (rack.Humedad > 60 && rack.Humedad <= 70) ImgHumedadRack3 = "gota60.png";
-                else if (rack.Humedad > 70 && rack.Humedad <= 80) ImgHumedadRack3 = "gota70.png";
-                else if (rack.Humedad > 80 && rack.Humedad <= 90) ImgHumedadRack3 = "gota80.png";
-                else if (rack.Humedad >= 90) ImgHumedadRack3 = "gota90.png";
-
-                TemperaturaRack3 = $"{rack.Temperatura} °C";
-                if (rack.Temperatura <= 0) ImgTemperaturaRack3 = "termovacio.png";
-                else if (rack.Temperatura > 0 && rack.Temperatura <= 5) ImgTemperaturaRack3 = "termo1.png";
-                else if (rack.Temperatura > 5 && rack.Temperatura <= 10) ImgTemperaturaRack3 = "termo2.png";
-                else if (rack.Temperatura > 10 && rack.Temperatura <= 15) ImgTemperaturaRack3 = "termo3.png";
-                else if (rack.Temperatura > 15 && rack.Temperatura <= 20) ImgTemperaturaRack3 = "termo4.png";
-                else if (rack.Temperatura > 20 && rack.Temperatura <= 25) ImgTemperaturaRack3 = "termo5.png";
-                else if (rack.Temperatura > 25) ImgTemperaturaRack3 = "termofull.png";
+                RespuestaAsignacionModel res = Valores.Asignacion(rack);
+                HumedadRack3 = res.rack.Humedad;
+                TemperaturaRack3 = res.rack.Temperatura;
+                LuzRack3 = res.rack.Luz;
+                EnergiaRack3 = res.rack.Energia;
+                PuertasRack3 = res.rack.Puertas;
+                ImgLuzRack3 = res.rackImagenesModel.ImgLuz;
+                ImgPuertasRack3 = res.rackImagenesModel.ImgPuertas;
+                ImgTemperaturaRack3 = res.rackImagenesModel.ImgTemperatura;
+                ImgEnergiaRack3 = res.rackImagenesModel.ImgEnergia;
+                ImgHumedadRack3 = res.rackImagenesModel.ImgHumedad;
             });
         }
 
         [RelayCommand]
         public async void AsignarValoresRack4()
         {
-            string jsonGoogle = "jsonGoogle3.json";
-            var localPath = Path.Combine(FileSystem.CacheDirectory, jsonGoogle);
-            using var json = await FileSystem.OpenAppPackageFileAsync(jsonGoogle);
-            using var dest = File.Create(localPath);
-            await json.CopyToAsync(dest);
-            dest.Close();
+            string localPath = await Valores.Validar("jsonGoogle3.json");
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", localPath);
             FirestoreDb db = FirestoreDb.Create(Constantes.ProjectID);
             DocumentReference docRef = db.Collection("Site1").Document("Rack4");
             FirestoreChangeListener listener = docRef.Listen(snap =>
             {
                 RackModel rack = snap.ConvertTo<RackModel>();
-                if (rack.Puertas == false)
-                {
-                    ImgPuertasRack4 = "puertacerr.png";
-                    PuertasRack4 = "Cerrada";
-                }
-                else
-                {
-                    ImgPuertasRack4 = "puertaopen.png";
-                    PuertasRack4 = "Abierta";
-                }
-                if (rack.Energia == false)
-                {
-                    ImgEnergiaRack4 = "energia.png";
-                    EnergiaRack4 = "No hay energia";
-                }
-                else
-                {
-                    ImgEnergiaRack4 = "rayocol.png";
-                    EnergiaRack4 = "Hay energia";
-                }
-                if (rack.Luz == false)
-                {
-                    ImgLuzRack4 = "focoapg.png";
-                    LuzRack4 = "Apagada";
-                }
-                else
-                {
-                    ImgLuzRack4 = "focopren.png";
-                    LuzRack4 = "Encendida";
-                }
-                HumedadRack4 = $"{rack.Humedad} %";
-                if (rack.Humedad <= 10) ImgHumedadRack4 = "gotavacia.png";
-                else if (rack.Humedad > 10 && rack.Humedad <= 20) ImgHumedadRack4 = "gota10.png";
-                else if (rack.Humedad > 20 && rack.Humedad <= 30) ImgHumedadRack4 = "gota20.png";
-                else if (rack.Humedad > 30 && rack.Humedad <= 40) ImgHumedadRack4 = "gota30.png";
-                else if (rack.Humedad > 40 && rack.Humedad <= 50) ImgHumedadRack4 = "gota40.png";
-                else if (rack.Humedad > 50 && rack.Humedad <= 60) ImgHumedadRack4 = "gota50.png";
-                else if (rack.Humedad > 60 && rack.Humedad <= 70) ImgHumedadRack4 = "gota60.png";
-                else if (rack.Humedad > 70 && rack.Humedad <= 80) ImgHumedadRack4 = "gota70.png";
-                else if (rack.Humedad > 80 && rack.Humedad <= 90) ImgHumedadRack4 = "gota80.png";
-                else if (rack.Humedad >= 90) ImgHumedadRack4 = "gota90.png";
-
-                TemperaturaRack4 = $"{rack.Temperatura} °C";
-                if (rack.Temperatura <= 0) ImgTemperaturaRack4 = "termovacio.png";
-                else if (rack.Temperatura > 0 && rack.Temperatura <= 5) ImgTemperaturaRack4 = "termo1.png";
-                else if (rack.Temperatura > 5 && rack.Temperatura <= 10) ImgTemperaturaRack4 = "termo2.png";
-                else if (rack.Temperatura > 10 && rack.Temperatura <= 15) ImgTemperaturaRack4 = "termo3.png";
-                else if (rack.Temperatura > 15 && rack.Temperatura <= 20) ImgTemperaturaRack4 = "termo4.png";
-                else if (rack.Temperatura > 20 && rack.Temperatura <= 25) ImgTemperaturaRack4 = "termo5.png";
-                else if (rack.Temperatura > 25) ImgTemperaturaRack4 = "termofull.png";
+                RespuestaAsignacionModel res = Valores.Asignacion(rack);
+                HumedadRack4 = res.rack.Humedad;
+                TemperaturaRack4 = res.rack.Temperatura;
+                LuzRack4 = res.rack.Luz;
+                EnergiaRack4 = res.rack.Energia;
+                PuertasRack4 = res.rack.Puertas;
+                ImgLuzRack4 = res.rackImagenesModel.ImgLuz;
+                ImgPuertasRack4 = res.rackImagenesModel.ImgPuertas;
+                ImgTemperaturaRack4 = res.rackImagenesModel.ImgTemperatura;
+                ImgEnergiaRack4 = res.rackImagenesModel.ImgEnergia;
+                ImgHumedadRack4 = res.rackImagenesModel.ImgHumedad;
             });
         }
     }
